@@ -76,9 +76,9 @@ class LogidticRegression:
         return lis
 standardize(X_tr)
 standardize(X_te)
-obj1 = LogidticRegression()
-model= obj1.fit(X_tr,y_tr)
-y_pred = obj1.predict(X_te)
+model = LogidticRegression()
+model.fit(X_tr,y_tr)
+y_pred = model.predict(X_te)
 print(y_pred)
 
 f1_score_te = accuracy_score(y_te,y_pred)
