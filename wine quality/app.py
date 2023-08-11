@@ -28,7 +28,7 @@ def predict():
         sulphates             = float(request.form['sulphates'])
         alcohol               = float(request.form['alcohol'])
         #load the pickle file
-        filename = 'random_model.pickle'
+        filename = 'final_model.pickle'
         loaded_model = pickle.load(open(filename,'rb'))
         data = np.array([[fixed_acidity,volatile_acidity,citric_acid,residual_sugar,
                         chlorides,free_sulphur_dioxide,
